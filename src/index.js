@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
 import "./index.css";
 import { Game } from "./game";
-import { ReduxRender } from "./redux.manager";
 import { store } from "./store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <ReduxRender store={store}>
+  <Provider store={store}>
     <Game />
-  </ReduxRender>
+  </Provider>
 );
