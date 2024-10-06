@@ -1,8 +1,0 @@
-.game {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  margin: 200px auto;
-  user-select: none;
-}
